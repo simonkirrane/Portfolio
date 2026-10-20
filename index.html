@@ -1,342 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="sk2.webp">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://signal.simonkirrane.com/#person",
+      "name": "Simon Kirrane",
+      "jobTitle": "Senior Content Marketing Manager & Lead Content Strategist",
+      "description": "Content strategy specialist helping experts turn deep knowledge into EEAT-rich stories through Generative Engine Optimization (GEO) and structured data architectures.",
+      "url": "https://signal.simonkirrane.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/simon-kirrane/"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Content Strategist",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        }
+      },
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "Structured Data",
+        "Knowledge Graphs",
+        "JSON-LD",
+        "Semantic Layers",
+        "B2B SaaS Content Strategy"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent Editorial & Strategy"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://signal.simonkirrane.com/#organization",
+      "name": "Signal/Noise",
+      "url": "https://signal.simonkirrane.com/",
+      "logo": "https://signal.simonkirrane.com/sk2.webp",
+      "founder": {
+        "@id": "https://signal.simonkirrane.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://signal.simonkirrane.com/#website",
+      "url": "https://signal.simonkirrane.com/",
+      "name": "Signal/Noise",
+      "publisher": {
+        "@id": "https://signal.simonkirrane.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://signal.simonkirrane.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://signal.simonkirrane.com/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://signal.simonkirrane.com/#article",
+      "isPartOf": {
+        "@id": "https://signal.simonkirrane.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://signal.simonkirrane.com/#breadcrumb"
+      },
+      "headline": "Signal/Noise — The Complete Guide to Structured Data and Knowledge Graphs for AI Search",
+      "description": "How structuring data for generative engine optimization (GEO) prevents AI models from misinterpreting corporate reality.",
+      "inLanguage": "en-GB",
+      "datePublished": "2026-04-01",
+      "dateModified": "2026-08-16",
+      "mainEntityOfPage": "https://signal.simonkirrane.com/",
+      "author": {
+        "@id": "https://signal.simonkirrane.com/#person"
+      },
+      "publisher": {
+        "@id": "https://signal.simonkirrane.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Generative Engine Optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Structured Data"
+        },
+        {
+          "@type": "Thing",
+          "name": "Knowledge Graphs"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "Brave"
+        },
+        {
+          "@type": "Organization",
+          "name": "IBM"
+        },
+        {
+          "@type": "Organization",
+          "name": "Gartner"
+        }
+      ],
+      "keywords": [
+        "Generative Engine Optimization",
+        "Structured Data",
+        "Knowledge Graphs",
+        "JSON-LD",
+        "Semantic Layer"
+      ]
+    }
+  ]
+}
+</script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Kirrane</title>
+    <meta name="description" content="Signal/Noise — Simon Kirrane. The Complete Guide to Structured Data and Knowledge Graphs for AI Search.">
+    <link rel="canonical" href="https://signal.simonkirrane.com/">
+    <title>Signal/Noise — Simon Kirrane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="sk2.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #f1f5f9;
-            --card-bg: #ffffff;
-            --text-main: #09090b;
-            --text-muted: #52525b;
-            --accent: #4f46e5;
-            --border: #cbd5e1; 
-            --badge-bg: #e0e7ff;
-            --badge-text: #3730a3;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 80px 20px;
-        }
-
-        .container {
-            max-width: 860px;
-            margin: 0 auto;
-        }
-
-        header {
-            margin-bottom: 50px;
-            padding-bottom: 10px;
-        }
-
-        .tagline-badge {
-            display: inline-block;
-            background-color: var(--badge-bg);
-            color: var(--badge-text);
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 6px 14px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        h1 {
-            font-family: 'Instrument Serif', serif;
-            font-size: 4.2rem;
-            font-weight: 400;
-            margin: 0 0 5px 0;
-            color: var(--text-main);
-            letter-spacing: -0.01em;
-            line-height: 1;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin: 0;
-            font-weight: 500;
-        }
-
-        .intro {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 60px;
-            padding: 0;
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            font-family: 'Instrument Serif', serif;
-            font-weight: 400;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            color: var(--text-muted);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 28px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 35px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03), 0 2px 4px -2px rgba(0,0,0,0.03);
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
-            border-color: var(--accent);
-        }
-
-        .card h3 {
-            margin-top: 0;
-            font-family: 'Instrument Serif', serif;
-            font-size: 2.1rem;
-            font-weight: 400;
-            color: var(--text-main);
-            line-height: 1.1;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            font-size: 1.05rem;
-        }
-
-        .preview-meta {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            border-top: 1px solid var(--border);
-            padding-top: 20px;
-            margin-top: 25px;
-            font-size: 0.9rem;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .preview-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .preview-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Tooltip Container & Box Styling */
-        .tooltip-container {
-            position: relative;
-            display: inline-block;
-        }
-
-        .tooltip-trigger {
-            background-color: #e0e7ff;
-            color: #3730a3;
-            border: 1px solid #c7d2fe;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: background-color 0.2s;
-        }
-
-        .tooltip-trigger:hover {
-            background-color: #c7d2fe;
-        }
-
-        .tooltip-box {
-            visibility: hidden;
-            width: 340px;
-            background-color: #09090b;
-            color: #f8fafc;
-            text-align: left;
-            border-radius: 12px;
-            padding: 16px;
-            position: absolute;
-            z-index: 100;
-            bottom: 135%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.2s ease-in-out;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            border: 1px solid #27272a;
-        }
-
-        .tooltip-box::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -6px;
-            border-width: 6px;
-            border-style: solid;
-            border-color: #09090b transparent transparent transparent;
-        }
-
-        .tooltip-container:hover .tooltip-box {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .tooltip-author {
-            display: block;
-            margin-top: 10px;
-            font-weight: 600;
-            color: #818cf8;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Footer housing rule and navigation links */
-        footer {
-            margin-top: 80px;
-            border-top: 1px solid var(--border);
-            padding-top: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .footer-nav a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            margin-right: 24px;
-            font-size: 0.95rem;
-        }
-
-        .footer-nav a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-copy {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            margin: 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ63PT1VNV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RZ63PT1VNV');
+    </script>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <span class="tagline-badge">Portfolio Highlights</span>
-            <h1>Simon Kirrane</h1>
-            <p class="subtitle">Content Lead</p>
-        </header>
-
-        <section class="intro">
-            <p><strong>20+ years</strong> leading content growth, digital transformation, and brand narrative across high-growth B2C, B2B SaaS and global publishing. MBA-qualified. I build structured content systems that convert by connecting to people through their needs and passions.</p>
-        </section>
-
-        <section>
-            <h2 class="section-title">Featured Works & Case Studies</h2>
-            
-            <div class="grid">
-                <!-- Card 1: Kolekti -->
-                <div class="card">
-                    <h3>Templates Convert</h3>
-                    <p>At Kolekti, to improve conversions, I turned to Templates in Confluence built with our formatting product: <strong>Mosaic</strong>.</p>
-                    <ul style="color: var(--text-muted); margin-bottom: 20px; padding-left: 20px; font-size: 0.98rem; line-height: 1.7;">
-                        <li style="margin-bottom: 10px;">Templates solve real user tasks so, as hoped, these became the highest-converting assets on the site and directly influenced product positioning and naming.</li>
-                        <li style="margin-bottom: 10px;">To highlight the flexibility of the product (and stay light touch), we created a Confluence Fantasy Character Sheet Template, knowing the crossover between D&D fans and developer users was high. We promoted it via a <em>Stranger Things</em> cultural hook on LinkedIn: <a href="https://www.kolekti.com/resources/templates/character-sheet-template-confluence" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View Character Sheet →</a></li>
-                        <li style="margin-bottom: 10px;">To further connect with Confluence users, we worked with Agile Manifesto signatory Jon Kern to create <strong>The Agile Framework</strong>, 10 templates promising teams they can start working agile immediately: <a href="https://www.kolekti.com/resources/templates/collections/jon-kern-agile-framework" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Explore Framework →</a></li>
-                        <li>The GTM webinar that went with the Agile templates launch was the best-attended event Kolekti had ever held: <a href="https://www.linkedin.com/events/agileat25-howtospotagorillainat7475877695097126912/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View LinkedIn Event →</a></li>
-                    </ul>
-                    <div class="preview-meta">
-                        <a href="https://www.kolekti.com/resources/templates" target="_blank" class="preview-link">Explore Hub →</a>
-                    </div>
-                </div>
-
-                <!-- Card 2: Advnture -->
-                <div class="card">
-                    <h3>Advntures in Web Success</h3>
-                    <p>I led concept-to-market launch for Future Plc's Advnture in six weeks - while also keeping up with the day job of running a 100+ team (with 20 direct/dotted-line reports). I sourced expert talent, established the editorial pipeline, and in 24 months it scaled to 8.4 million quarterly visits. Of the four other launches that went live at the same time, Advnture was seen as the success.</p>
-                    <div class="preview-meta">
-                        <a href="https://www.advnture.com/" target="_blank" class="preview-link">Go to website →</a>
-                    </div>
-                </div>
-
-                <!-- Card 3: W42ST -->
-                <div class="card">
-                    <h3>W42ST - Heaven in Hell's Kitchen</h3>
-                    <p>Tasked with creating 'Bath Life for Hell's Kitchen' with a team of three, I launched a 100-page, 20k-monthly-print-run magazine in just three months. Shortly after launch, our <a href="https://www.facebook.com/w42st/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Facebook page →</a> outpaced legacy NYC incumbents like <em>The Village Voice</em>. The brand continues today as a much-loved, digital-only brand for residents of Hell's Kitchen.</p>
-                    <div class="preview-meta">
-                        <a href="https://issuu.com/w42st/docs/w42st_issue1" target="_blank" class="preview-link">W42ST Issue 1 →</a>
-                    </div>
-                </div>
-
-                <!-- Card 4: Canon -->
-                <div class="card">
-                    <h3>Focus, Amplified</h3>
-                    <p>Led content strategy for the Canon EMEA Ambassador launch. Managed globally mobile creators, orchestrated remote studio gear flatlays, and shaped visual-first profiles to deliver exciting profiles that also function as product overviews and use cases.</p>
-                    <div class="preview-meta">
-                        <a href="https://www.canon.co.uk/pro/ambassadors/#id_2322463" target="_blank" class="preview-link">Explore Profiles →</a>
-                    </div>
-                </div>
-
-           <!-- Card 5: AI Focus (Combined into one card with inline links and hover feedback) -->
-                <div class="card">
-                    <h3>AI Focus: GEO, Playbooks & Technical Workarounds</h3>
-                    <p>In the last month I've researched and written a piece on <a href="https://signal.simonkirrane.com" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">ranking for LLMs by creating a semantic strategy that is led by Schema →</a>. At Kolekti I authored a comprehensive operational guide to enterprise AI adoption, which I have now <a href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">reworked for my own site as a guide to AI for Content Marketing →</a>. Finally, at Kolekti, I developed a custom technical AI prompt solution that overrides Rovo's default settings, enabling it to read content within any Confluence macro—a capability initially considered impossible.</p>
-                    
-                    <div class="preview-meta" style="justify-content: flex-start;">
-                        <!-- Interactive Tooltip Button -->
-                        <div class="tooltip-container">
-                            <button class="tooltip-trigger">
-                                💬 View Peer Feedback (Dan Ivory)
-                            </button>
-                            <div class="tooltip-box">
-                                "I've been impressed with Simon's eagerness to go above and beyond to help solve certain technical challenges we've been facing recently. In particular, he's been (arguably the most!) proactive at digging into solving a critical problem that Rovo cannot read certain Mosaic macros. Not being phased by this being a technical problem, Simon's testing and subsequent findings, have laid the foundation for the engineering team's ongoing investigations and have given us hope there is a solution. We've also recently shared his findings with Atlassian to see if a more permanent solution could be explored for Rovo, helping not just Mosaic but any app vendor using this type of macro. Further highlighting the impact Simon has had beyond his day to day work."
-                                <span class="tooltip-author">— Dan Ivory, Senior Product Manager Mosaic</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <footer>
-            <div class="footer-nav">
-                <a href="mailto:simonkirrane1@gmail.com">Email</a>
-                <a href="https://linkedin.com/in/simonkirrane" target="_blank">LinkedIn</a>
-                <a href="https://www.simonkirrane.com/blog" target="_blank">Main Blog</a>
-            </div>
-            <p class="footer-copy">&copy; 2026 Simon Kirrane.</p>
-        </footer>
+<!-- Top Navigation Header -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#top" class="brand-wrapper">
+            <img src="sk2.webp" alt="Simon Kirrane Logo" class="brand-logo-img">
+            <span class="brand-name"><span class="brand-signal">Signal</span>/<span class="brand-noise">Noise</span></span>
+            <span class="brand-desc">Simon Kirrane</span>
+        </a>
     </div>
+    <nav class="header-nav" aria-label="Page Sections">
+        <a href="#bio">Profile</a>
+        <a href="#templates">Templates Convert</a>
+        <a href="#advnture">Advntures in Web Success</a>
+        <a href="#w42st">W42ST</a>
+        <a href="#canon">Focus, Amplified</a>
+        <a href="#ai-focus">AI Focus</a>
+    </nav>
+</header>
+
+<!-- Main Editorial Document Container -->
+<main class="document-container" id="top">
+
+    <!-- HERO / BIO BANNER -->
+    <section class="hero-visual-card" id="bio">
+        <div class="hero-meta-tag">
+            <span>Content Lead &amp; Digital Strategist • MBA-Qualified</span>
+        </div>
+        <h1 class="hero-title">Simon Kirrane</h1>
+        <p class="hero-subtitle">
+            20+ years leading content growth, digital transformation, and brand narrative across high-growth B2C, B2B SaaS and global publishing. I build structured content systems that convert by connecting to people through their needs and passions.
+        </p>
+    </section>
+
+    <!-- SECTION 1: TEMPLATES CONVERT -->
+    <section class="doc-section" id="templates">
+        <span class="section-counter">FEATURED WORK / 01</span>
+        <h1>Templates Convert</h1>
+        
+        <div class="narrative-block">
+            <p class="body-copy">At Kolekti, to improve conversions, I turned to Templates in Confluence built with our formatting product: Mosaic. Templates solve real user tasks so, as hoped, these became the highest-converting assets on the site and directly influenced product positioning and naming.</p>
+        </div>
+
+        <div class="narrative-block">
+            <p class="body-copy">To highlight the flexibility of the product (and stay light touch), we created a Confluence Fantasy Character Sheet Template, knowing the crossover between D&D fans and developer users was high. We promoted it via a Stranger Things cultural hook on LinkedIn.</p>
+        </div>
+
+        <div class="narrative-block">
+            <p class="body-copy">To further connect with Confluence users, we worked with Agile Manifesto signatory Jon Kern to create The Agile Framework, 10 templates promising teams they can start working agile immediately.</p>
+        </div>
+
+        <div class="portfolio-result-box">
+            <p>The GTM webinar that went with the Agile templates launch was the <strong>best-attended event Kolekti had ever held</strong>. <a href="#" target="_blank" rel="noopener noreferrer">View LinkedIn Event →</a> | <a href="#" target="_blank" rel="noopener noreferrer">View Character Sheet →</a> | <a href="#" target="_blank" rel="noopener noreferrer">Explore Framework →</a></p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ADVNTURES IN WEB SUCCESS -->
+    <section class="doc-section" id="advnture">
+        <span class="section-counter">FEATURED WORK / 02</span>
+        <h1>Advntures in Web Success</h1>
+        
+        <div class="narrative-block">
+            <p class="body-copy">I led concept-to-market launch for Future Plc's Advnture in six weeks - while also keeping up with the day job of running a 100+ team (with 20 direct/dotted-line reports). I sourced expert talent, established the editorial pipeline, and in 24 months it scaled to 8.4 million quarterly visits. Of the four other launches that went live at the same time, Advnture was seen as the success.</p>
+        </div>
+
+        <div class="portfolio-result-box">
+            <p>Scaled to <strong>8.4 million quarterly visits</strong> in 24 months, outperforming all simultaneous corporate sibling launches. <a href="#" target="_blank" rel="noopener noreferrer">Go to website →</a></p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: W42ST -->
+    <section class="doc-section" id="w42st">
+        <span class="section-counter">FEATURED WORK / 03</span>
+        <h1>W42ST - Heaven in Hell's Kitchen</h1>
+        
+        <div class="narrative-block">
+            <p class="body-copy">Tasked with creating 'Bath Life for Hell's Kitchen' with a team of three, I launched a 100-page, 20k-monthly-print-run magazine in just three months. Shortly after launch, our Facebook page outpaced legacy NYC incumbents like The Village Voice. The brand continues today as a much-loved, digital-only brand for residents of Hell's Kitchen.</p>
+        </div>
+
+        <div class="portfolio-result-box">
+            <p>Successfully delivered a <strong>100-page print run of 20k/month</strong> in 3 months flat, outpacing legacy NYC media incumbents on social engagement. <a href="#" target="_blank" rel="noopener noreferrer">W42ST Issue 1 →</a></p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FOCUS, AMPLIFIED -->
+    <section class="doc-section" id="canon">
+        <span class="section-counter">FEATURED WORK / 04</span>
+        <h1>Focus, Amplified</h1>
+        
+        <div class="narrative-block">
+            <p class="body-copy">Led content strategy for the Canon EMEA Ambassador launch. Managed globally mobile creators, orchestrated remote studio gear flatlays, and shaped visual-first profiles to deliver exciting profiles that also function as product overviews and use cases.</p>
+        </div>
+
+        <div class="portfolio-result-box">
+            <p>Delivered evergreen visual creator profiles that doubled as high-converting product use-case overviews. <a href="#" target="_blank" rel="noopener noreferrer">Explore Profiles →</a></p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: AI FOCUS -->
+    <section class="doc-section" id="ai-focus">
+        <span class="section-counter">FEATURED WORK / 05</span>
+        <h1>AI Focus: GEO, Playbooks &amp; Technical Workarounds</h1>
+        
+        <div class="narrative-block">
+            <p class="body-copy">In the last month I've researched and written a piece on ranking for LLMs by creating a semantic strategy that is led by Schema. At Kolekti I authored a comprehensive operational guide to enterprise AI adoption, which I have now reworked for my own site as a guide to AI for Content Marketing. Finally, at Kolekti, I developed a custom technical AI prompt solution that overrides Rovo's default settings, enabling it to read content within any Confluence macro—a capability initially considered impossible.</p>
+        </div>
+
+        <div class="portfolio-result-box">
+            <p>Engineered proprietary technical prompt workarounds and published foundational B2B AI operational playbooks. <a href="#" target="_blank" rel="noopener noreferrer">Read Schema Guide →</a> | <a href="#" target="_blank" rel="noopener noreferrer">Read AI Guide →</a></p>
+        </div>
+
+        <div class="source-foot" style="margin-top: 2rem;">
+            <span>💬 <a href="mailto:simonkirrane1@gmail.com">View Peer Feedback (Dan Ivory)</a></span>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Simon Kirrane. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
