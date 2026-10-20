@@ -125,36 +125,6 @@
             border-color: var(--accent);
         }
 
-        .card-split {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .card-text {
-            flex: 1;
-        }
-
-        .card-logo-box {
-            width: 110px;
-            height: 110px;
-            flex-shrink: 0;
-            background-color: #f8fafc;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px;
-        }
-
-        .card-logo-box img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
         .card h3 {
             margin-top: 0;
             font-family: 'Instrument Serif', serif;
@@ -174,20 +144,11 @@
         .preview-meta {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
             border-top: 1px solid var(--border);
             padding-top: 20px;
             margin-top: 25px;
             font-size: 0.9rem;
-        }
-
-        .preview-url {
-            color: var(--text-muted);
-            font-family: monospace;
-            background: #f1f5f9;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.85rem;
         }
 
         .preview-link {
@@ -234,21 +195,14 @@
             <div class="grid">
                 <!-- Card 1: Kolekti -->
                 <div class="card">
-                    <div class="card-split">
-                        <div class="card-text">
-                            <h3>Templates Convert</h3>
-                            <p>At Kolekti, to improve conversions, I turned to Templates in Confluence built with our formatting product: <strong>Mosaic</strong>.</p>
-                            <ul style="color: var(--text-muted); margin-bottom: 20px; padding-left: 20px; font-size: 0.98rem; line-height: 1.7;">
-                                <li style="margin-bottom: 10px;">Templates solve real user tasks so, as hoped, these became the highest-converting assets on the site and directly influenced product positioning and naming.</li>
-                                <li style="margin-bottom: 10px;">To highlight the flexibility of the product (and stay light touch), we created a Confluence Fantasy Character Sheet Template, knowing the crossover between D&D fans and developer users was high. We promoted it via a <em>Stranger Things</em> cultural hook on LinkedIn: <a href="https://www.kolekti.com/resources/templates/character-sheet-template-confluence" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View Character Sheet →</a></li>
-                                <li style="margin-bottom: 10px;">To further connect with Confluence users, we worked with Agile Manifesto signatory Jon Kern to create <strong>The Agile Framework</strong>, 10 templates promising teams they can start working agile immediately: <a href="https://www.kolekti.com/resources/templates/collections/jon-kern-agile-framework" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Explore Framework →</a></li>
-                                <li>The GTM webinar that went with the Agile templates launch was the best-attended event Kolekti had ever held: <a href="https://www.linkedin.com/events/agileat25-howtospotagorillainat7475877695097126912/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View LinkedIn Event →</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-logo-box">
-                            <img src="kolekti-logo.png" alt="Kolekti Logo">
-                        </div>
-                    </div>
+                    <h3>Templates Convert</h3>
+                    <p>At Kolekti, to improve conversions, I turned to Templates in Confluence built with our formatting product: <strong>Mosaic</strong>.</p>
+                    <ul style="color: var(--text-muted); margin-bottom: 20px; padding-left: 20px; font-size: 0.98rem; line-height: 1.7;">
+                        <li style="margin-bottom: 10px;">Templates solve real user tasks so, as hoped, these became the highest-converting assets on the site and directly influenced product positioning and naming.</li>
+                        <li style="margin-bottom: 10px;">To highlight the flexibility of the product (and stay light touch), we created a Confluence Fantasy Character Sheet Template, knowing the crossover between D&D fans and developer users was high. We promoted it via a <em>Stranger Things</em> cultural hook on LinkedIn: <a href="https://www.kolekti.com/resources/templates/character-sheet-template-confluence" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View Character Sheet →</a></li>
+                        <li style="margin-bottom: 10px;">To further connect with Confluence users, we worked with Agile Manifesto signatory Jon Kern to create <strong>The Agile Framework</strong>, 10 templates promising teams they can start working agile immediately: <a href="https://www.kolekti.com/resources/templates/collections/jon-kern-agile-framework" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Explore Framework →</a></li>
+                        <li>The GTM webinar that went with the Agile templates launch was the best-attended event Kolekti had ever held: <a href="https://www.linkedin.com/events/agileat25-howtospotagorillainat7475877695097126912/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View LinkedIn Event →</a></li>
+                    </ul>
                     <div class="preview-meta">
                         <a href="https://www.kolekti.com/resources/templates" target="_blank" class="preview-link">Explore Hub →</a>
                     </div>
@@ -256,15 +210,8 @@
 
                 <!-- Card 2: Advnture -->
                 <div class="card">
-                    <div class="card-split">
-                        <div class="card-text">
-                            <h3>Advntures in Web Success</h3>
-                            <p>I led concept-to-market launch for Future Plc's Advnture in six weeks - while also keeping up with the day job of running a 100+ team (with 20 direct/dotted-line reports). I sourced expert talent, established the editorial pipeline, and in 24 months it scaled to 8.4 million quarterly visits. Of the four other launches that went live at the same time, Advnture was seen as the success.</p>
-                        </div>
-                        <div class="card-logo-box">
-                            <img src="advnture-logo.png" alt="Advnture Logo">
-                        </div>
-                    </div>
+                    <h3>Advntures in Web Success</h3>
+                    <p>I led concept-to-market launch for Future Plc's Advnture in six weeks - while also keeping up with the day job of running a 100+ team (with 20 direct/dotted-line reports). I sourced expert talent, established the editorial pipeline, and in 24 months it scaled to 8.4 million quarterly visits. Of the four other launches that went live at the same time, Advnture was seen as the success.</p>
                     <div class="preview-meta">
                         <a href="https://www.advnture.com/" target="_blank" class="preview-link">Go to website →</a>
                     </div>
@@ -272,15 +219,8 @@
 
                 <!-- Card 3: W42ST -->
                 <div class="card">
-                    <div class="card-split">
-                        <div class="card-text">
-                            <h3>W42ST - Heaven in Hell's Kitchen</h3>
-                            <p>Tasked with creating 'Bath Life for Hell's Kitchen' with a team of three, I launched a 100-page, 20k-monthly-print-run magazine in just three months. Shortly after launch, our <a href="https://www.facebook.com/w42st/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Facebook page →</a> outpaced legacy NYC incumbents like <em>The Village Voice</em>. The brand continues today as a much-loved, digital-only brand for residents of Hell's Kitchen.</p>
-                        </div>
-                        <div class="card-logo-box">
-                            <img src="w42st-logo.png" alt="W42ST Logo">
-                        </div>
-                    </div>
+                    <h3>W42ST - Heaven in Hell's Kitchen</h3>
+                    <p>Tasked with creating 'Bath Life for Hell's Kitchen' with a team of three, I launched a 100-page, 20k-monthly-print-run magazine in just three months. Shortly after launch, our <a href="https://www.facebook.com/w42st/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Facebook page →</a> outpaced legacy NYC incumbents like <em>The Village Voice</em>. The brand continues today as a much-loved, digital-only brand for residents of Hell's Kitchen.</p>
                     <div class="preview-meta">
                         <a href="https://issuu.com/w42st/docs/w42st_issue1" target="_blank" class="preview-link">W42ST Issue 1 →</a>
                     </div>
@@ -288,15 +228,8 @@
 
                 <!-- Card 4: Canon -->
                 <div class="card">
-                    <div class="card-split">
-                        <div class="card-text">
-                            <h3>Focus, Amplified</h3>
-                            <p>Led content strategy for the Canon EMEA Ambassador launch. Managed globally mobile creators, orchestrated remote studio gear flatlays, and shaped visual-first profiles to deliver exciting profiles that also function as product overviews and use cases.</p>
-                        </div>
-                        <div class="card-logo-box">
-                            <img src="canon-logo.png" alt="Canon Logo">
-                        </div>
-                    </div>
+                    <h3>Focus, Amplified</h3>
+                    <p>Led content strategy for the Canon EMEA Ambassador launch. Managed globally mobile creators, orchestrated remote studio gear flatlays, and shaped visual-first profiles to deliver exciting profiles that also function as product overviews and use cases.</p>
                     <div class="preview-meta">
                         <a href="https://www.canon.co.uk/pro/ambassadors/#id_2322463" target="_blank" class="preview-link">Explore Profiles →</a>
                     </div>
@@ -304,23 +237,19 @@
 
                 <!-- Card 5: GEO / Schema -->
                 <div class="card">
-                    <div class="card-text" style="width: 100%;">
-                        <h3>GEO & Schema Knowledge Graph Architecture</h3>
-                        <p>Pioneered advanced search positioning shifting from keywords to entities. Scoped major overhauls of Google Schema and semantic structures to ensure enterprise brands are accurately parsed, structured, and cited by LLMs and answer engines.</p>
-                        <div class="preview-meta">
-                            <a href="https://signal.simonkirrane.com" target="_blank" class="preview-link">ENTER PASSWORD Schema123! →</a>
-                        </div>
+                    <h3>GEO & Schema Knowledge Graph Architecture</h3>
+                    <p>Pioneered advanced search positioning shifting from keywords to entities. Scoped major overhauls of Google Schema and semantic structures to ensure enterprise brands are accurately parsed, structured, and cited by LLMs and answer engines.</p>
+                    <div class="preview-meta">
+                        <a href="https://signal.simonkirrane.com" target="_blank" class="preview-link">ENTER PASSWORD Schema123! →</a>
                     </div>
                 </div>
 
                 <!-- Card 6: AI Playbook -->
                 <div class="card">
-                    <div class="card-text" style="width: 100%;">
-                        <h3>The Generative AI Playbook</h3>
-                        <p>Authored a comprehensive operational guide to enterprise AI adoption. Establishes clear governance frameworks, quality gates, and structured prompt pipelines designed to protect brand voice and editorial integrity as content velocity scales.</p>
-                        <div class="preview-meta">
-                            <a href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing" target="_blank" class="preview-link">Read Playbook →</a>
-                        </div>
+                    <h3>The Generative AI Playbook</h3>
+                    <p>Authored a comprehensive operational guide to enterprise AI adoption. Establishes clear governance frameworks, quality gates, and structured prompt pipelines designed to protect brand voice and editorial integrity as content velocity scales.</p>
+                    <div class="preview-meta">
+                        <a href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing" target="_blank" class="preview-link">Read Playbook →</a>
                     </div>
                 </div>
             </div>
