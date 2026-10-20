@@ -1,4 +1,4 @@
-/* style.css — Clean Publisher Portfolio & Editorial Red Accent */
+/* style.css — Clean Publisher Portfolio & Proper Logo Sizing */
 
 :root {
     --bg-page: #fbfbfa;
@@ -73,12 +73,14 @@ body {
     color: inherit;
 }
 
+/* FIXED LOGO SIZING */
 .brand-logo-img {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 6px;
     border: 1px solid var(--border-light);
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .brand-name {
@@ -131,7 +133,7 @@ body {
 /* Document Container */
 .document-container {
     max-width: 960px;
-    margin: 110px auto 5rem;
+    margin: 130px auto 5rem;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
