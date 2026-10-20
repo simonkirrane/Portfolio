@@ -35,9 +35,8 @@
         }
 
         header {
-            margin-bottom: 60px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 35px;
+            margin-bottom: 50px;
+            padding-bottom: 10px;
         }
 
         .tagline-badge {
@@ -66,31 +65,15 @@
         .subtitle {
             font-size: 1.2rem;
             color: var(--text-muted);
-            margin: 0 0 25px 0;
+            margin: 0;
             font-weight: 500;
-        }
-
-        .links-nav a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            margin-right: 24px;
-            font-size: 0.95rem;
-        }
-
-        .links-nav a:hover {
-            text-decoration: underline;
         }
 
         .intro {
             font-size: 1.2rem;
             color: var(--text-muted);
             margin-bottom: 60px;
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03), 0 2px 4px -2px rgba(0,0,0,0.03);
+            padding: 0;
         }
 
         .section-title {
@@ -149,6 +132,8 @@
             padding-top: 20px;
             margin-top: 25px;
             font-size: 0.9rem;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .preview-link {
@@ -161,13 +146,106 @@
             text-decoration: underline;
         }
 
-        footer {
-            margin-top: 100px;
-            text-align: center;
-            color: var(--text-muted);
+        /* Tooltip Container & Box Styling */
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-trigger {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            border: 1px solid #c7d2fe;
+            padding: 6px 14px;
+            border-radius: 20px;
             font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .tooltip-trigger:hover {
+            background-color: #c7d2fe;
+        }
+
+        .tooltip-box {
+            visibility: hidden;
+            width: 340px;
+            background-color: #09090b;
+            color: #f8fafc;
+            text-align: left;
+            border-radius: 12px;
+            padding: 16px;
+            position: absolute;
+            z-index: 100;
+            bottom: 135%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid #27272a;
+        }
+
+        .tooltip-box::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -6px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #09090b transparent transparent transparent;
+        }
+
+        .tooltip-container:hover .tooltip-box {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip-author {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #818cf8;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Footer housing rule and navigation links */
+        footer {
+            margin-top: 80px;
             border-top: 1px solid var(--border);
             padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 24px;
+            font-size: 0.95rem;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin: 0;
         }
     </style>
 </head>
@@ -178,11 +256,6 @@
             <span class="tagline-badge">Portfolio Highlights</span>
             <h1>Simon Kirrane</h1>
             <p class="subtitle">Content Lead</p>
-            <div class="links-nav">
-                <a href="mailto:simonkirrane1@gmail.com">Email</a>
-                <a href="https://linkedin.com/in/simonkirrane" target="_blank">LinkedIn</a>
-                <a href="https://www.simonkirrane.com/blog" target="_blank">Main Blog</a>
-            </div>
         </header>
 
         <section class="intro">
@@ -235,28 +308,40 @@
                     </div>
                 </div>
 
-                <!-- Card 5: GEO / Schema -->
+                <!-- Card 5: AI Focus (Combined into one card with 3 links + Interactive Hover Tooltip) -->
                 <div class="card">
-                    <h3>GEO & Schema Knowledge Graph Architecture</h3>
-                    <p>Pioneered advanced search positioning shifting from keywords to entities. Scoped major overhauls of Google Schema and semantic structures to ensure enterprise brands are accurately parsed, structured, and cited by LLMs and answer engines.</p>
-                    <div class="preview-meta">
-                        <a href="https://signal.simonkirrane.com" target="_blank" class="preview-link">ENTER PASSWORD Schema123! →</a>
-                    </div>
-                </div>
+                    <h3>AI Focus: GEO, Playbooks & Technical Workarounds</h3>
+                    <p>In the last month I've researched and written a piece on ranking for LLMs by creating a semantic strategy that is led by Schema. At Kolekti I authored a comprehensive operational guide to enterprise AI adoption, which I have now reworked for my own site as a guide to AI for Content Marketing. Finally, at Kolekti, I developed a custom technical AI prompt solution that overrides Rovo's default settings, enabling it to read content within any Confluence macro—a capability initially considered impossible.</p>
+                    
+                    <div class="preview-meta" style="justify-content: space-between;">
+                        <!-- Interactive Tooltip Button on the left -->
+                        <div class="tooltip-container">
+                            <button class="tooltip-trigger">
+                                💬 View Peer Feedback (Dan Ivory)
+                            </button>
+                            <div class="tooltip-box">
+                                "I've been impressed with Simon's eagerness to go above and beyond to help solve certain technical challenges we've been facing recently. In particular, he's been (arguably the most!) proactive at digging into solving a critical problem that Rovo cannot read certain Mosaic macros. Not being phased by this being a technical problem, Simon's testing and subsequent findings, have laid the foundation for the engineering team's ongoing investigations and have given us hope there is a solution. We've also recently shared his findings with Atlassian to see if a more permanent solution could be explored for Rovo, helping not just Mosaic but any app vendor using this type of macro. Further highlighting the impact Simon has had beyond his day to day work."
+                                <span class="tooltip-author">— Dan Ivory, Senior Product Manager Mosaic</span>
+                            </div>
+                        </div>
 
-                <!-- Card 6: AI Playbook -->
-                <div class="card">
-                    <h3>The Generative AI Playbook</h3>
-                    <p>Authored a comprehensive operational guide to enterprise AI adoption. Establishes clear governance frameworks, quality gates, and structured prompt pipelines designed to protect brand voice and editorial integrity as content velocity scales.</p>
-                    <div class="preview-meta">
-                        <a href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing" target="_blank" class="preview-link">Read Playbook →</a>
+                        <!-- 3 Links on the right -->
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="https://signal.simonkirrane.com" target="_blank" class="preview-link">GEO & Schema (Password: Schema123!) →</a>
+                            <a href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing" target="_blank" class="preview-link">AI Playbook →</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 Simon Kirrane.</p>
+            <div class="footer-nav">
+                <a href="mailto:simonkirrane1@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/simonkirrane" target="_blank">LinkedIn</a>
+                <a href="https://www.simonkirrane.com/blog" target="_blank">Main Blog</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Simon Kirrane.</p>
         </footer>
     </div>
 
