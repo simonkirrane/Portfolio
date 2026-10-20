@@ -5,69 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Kirrane — Senior Content Strategist & AI Workflows</title>
+    <!-- Import Google Fonts: Instrument Serif for high-end editorial headers, Inter for crisp body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #f8fafc;
+            --bg-color: #fbfbfc;
             --card-bg: #ffffff;
-            --text-main: #0f172a;
-            --text-muted: #475569;
-            --accent: #2563eb;
-            --border: #e2e8f0;
-            --badge-bg: #eff6ff;
-            --badge-text: #1d4ed8;
+            --text-main: #09090b;
+            --text-muted: #52525b;
+            --accent: #4f46e5; /* Rich Indigo/Violet — the exact complement to Paddle's yellow */
+            --border: #e4e4e7;
+            --badge-bg: #e0e7ff;
+            --badge-text: #3730a3;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.6;
             margin: 0;
-            padding: 60px 20px;
+            padding: 80px 20px;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
         }
 
         header {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             border-bottom: 1px solid var(--border);
-            padding-bottom: 30px;
+            padding-bottom: 35px;
         }
 
         .tagline-badge {
             display: inline-block;
             background-color: var(--badge-bg);
             color: var(--badge-text);
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            padding: 4px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.08em;
         }
 
         h1 {
-            font-size: 2.75rem;
-            margin: 0 0 10px 0;
+            font-family: 'Instrument Serif', serif;
+            font-size: 4.2rem;
+            font-weight: 400;
+            margin: 0 0 5px 0;
             color: var(--text-main);
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
+            line-height: 1;
         }
 
         .subtitle {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
-            margin: 0 0 20px 0;
+            margin: 0 0 25px 0;
+            font-weight: 500;
         }
 
         .links-nav a {
             color: var(--accent);
             text-decoration: none;
             font-weight: 600;
-            margin-right: 20px;
+            margin-right: 24px;
+            font-size: 0.95rem;
         }
 
         .links-nav a:hover {
@@ -75,54 +84,62 @@
         }
 
         .intro {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             background: var(--card-bg);
             border: 1px solid var(--border);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01), 0 2px 4px -2px rgba(0,0,0,0.01);
         }
 
         .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            color: var(--text-main);
-            letter-spacing: -0.01em;
+            font-size: 1.4rem;
+            font-family: 'Instrument Serif', serif;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: var(--text-muted);
         }
 
         .grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 24px;
+            gap: 28px;
         }
 
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 30px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            border-radius: 16px;
+            padding: 35px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01), 0 2px 4px -2px rgba(0,0,0,0.01);
             position: relative;
         }
 
         .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            border-color: #cbd5e1;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent);
         }
 
         .card h3 {
             margin-top: 0;
-            font-size: 1.35rem;
+            font-family: 'Instrument Serif', serif;
+            font-size: 2.1rem;
+            font-weight: 400;
             color: var(--text-main);
+            line-height: 1.1;
+            margin-bottom: 15px;
         }
 
         .card p {
             color: var(--text-muted);
             margin-bottom: 20px;
+            font-size: 1.05rem;
         }
 
         .preview-meta {
@@ -130,14 +147,18 @@
             align-items: center;
             justify-content: space-between;
             border-top: 1px solid var(--border);
-            padding-top: 15px;
-            margin-top: 20px;
+            padding-top: 20px;
+            margin-top: 25px;
             font-size: 0.9rem;
         }
 
         .preview-url {
             color: var(--text-muted);
             font-family: monospace;
+            background: #f4f4f5;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
         }
 
         .preview-link {
@@ -151,12 +172,12 @@
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
             text-align: center;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             border-top: 1px solid var(--border);
-            padding-top: 30px;
+            padding-top: 40px;
         }
     </style>
 </head>
@@ -164,9 +185,9 @@
 
     <div class="container">
         <header>
-            <span class="tagline-badge">Portfolio Highlights</span>
+            <span class="tagline-badge">Portfolio Highlights & Systems</span>
             <h1>Simon Kirrane</h1>
-            <p class="subtitle">Content Lead</p>
+            <p class="subtitle">Content Strategist and Lead</p>
             <div class="links-nav">
                 <a href="mailto:simonkirrane1@gmail.com">Email</a>
                 <a href="https://linkedin.com/in/simonkirrane" target="_blank">LinkedIn</a>
@@ -186,7 +207,7 @@
                 <div class="card">
                     <h3>Templates Convert</h3>
                     <p>At Kolekti, to improve conversions, I turned to Templates in Confluence built with our formatting product: <strong>Mosaic</strong>.</p>
-                    <ul style="color: var(--text-muted); margin-bottom: 20px; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                    <ul style="color: var(--text-muted); margin-bottom: 20px; padding-left: 20px; font-size: 0.98rem; line-height: 1.7;">
                         <li style="margin-bottom: 10px;">Templates solve real user tasks so, as hoped, these became the highest-converting assets on the site and directly influenced product positioning and naming.</li>
                         <li style="margin-bottom: 10px;">To highlight the flexibility of the product (and stay light touch), we created a Confluence Fantasy Character Sheet Template, knowing the crossover between D&D fans and developer users was high. We promoted it via a <em>Stranger Things</em> cultural hook on LinkedIn: <a href="https://www.kolekti.com/resources/templates/character-sheet-template-confluence" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">View Character Sheet →</a></li>
                         <li style="margin-bottom: 10px;">To further connect with Confluence users, we worked with Agile Manifesto signatory Jon Kern to create <strong>The Agile Framework</strong>, 10 templates promising teams they can start working agile immediately: <a href="https://www.kolekti.com/resources/templates/collections/jon-kern-agile-framework" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Explore Framework →</a></li>
