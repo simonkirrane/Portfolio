@@ -372,3 +372,35 @@ body {
     line-height: 1.4;
     clear: both;
 }
+/* Isolated Case Study Media Card (Guarantees zero text wrapping issues) */
+.case-study-media-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+    background: #ffffff !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 6px !important;
+    padding: 0.85rem !important;
+    clear: both !important;
+}
+
+.case-study-media-card img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px !important;
+    margin-bottom: 0.65rem !important;
+}
+
+.case-study-caption {
+    display: block !important;
+    width: 100% !important;
+    font-size: 0.75rem !important;
+    color: var(--text-muted) !important;
+    font-family: var(--font-mono) !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    clear: both !important;
+}
