@@ -389,7 +389,7 @@ body {
 
 .case-study-media-card img {
     display: inline-block !important;  /* Allows the image to center cleanly */
-    max-width: 480px !important;       /* Keeps the image itself a nice readable size */
+    max-width: 100% !important;        /* Now scales to fill the full width of the card */
     width: 100% !important;
     height: auto !important;
     border-radius: 4px !important;
