@@ -372,22 +372,24 @@ body {
     line-height: 1.4;
     clear: both;
 }
-/* Centered Isolated Case Study Media Card */
+/* True Centered Isolated Case Study Media Card */
 .case-study-media-card {
     display: block !important;
     width: 100% !important;
-    max-width: 520px !important;       /* Gives the card a clean, polished width */
-    margin: 2rem auto 0.5rem auto !important; /* 'auto' on left/right centers it perfectly */
+    max-width: 100% !important;        /* Matches the full width of the section box */
+    margin: 1.75rem 0 0.5rem 0 !important;
     background: #ffffff !important;
     border: 1px solid var(--border-light) !important;
     border-radius: 8px !important;
     padding: 1rem !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
     clear: both !important;
+    text-align: center !important;     /* Centers the image and caption inside */
 }
 
 .case-study-media-card img {
-    display: block !important;
+    display: inline-block !important;  /* Allows the image to center cleanly */
+    max-width: 480px !important;       /* Keeps the image itself a nice readable size */
     width: 100% !important;
     height: auto !important;
     border-radius: 4px !important;
