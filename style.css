@@ -276,3 +276,72 @@ body {
     .hero-title { font-size: 2rem; }
     .doc-section h1 { font-size: 1.6rem; }
 }
+/* Clean Portfolio Thumbnail & Click-to-Expand Modal */
+.portfolio-thumb-wrapper {
+    position: relative;
+    margin-top: 0.75rem;
+    max-width: 220px; /* Small, neat preview size */
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-thumb-wrapper:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-signal);
+}
+
+.portfolio-thumb-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.thumb-hint {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+    display: block;
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+/* Expanded Full-Screen Modal State */
+.portfolio-thumb-wrapper.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    background: rgba(11, 15, 25, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    cursor: zoom-out;
+}
+
+.portfolio-thumb-wrapper.expanded .portfolio-thumb-img {
+    max-width: 90vw;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.portfolio-thumb-wrapper.expanded .thumb-hint {
+    color: #f8fafc;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
