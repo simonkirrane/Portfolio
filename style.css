@@ -341,3 +341,34 @@ body {
     text-align: center;
     line-height: 1.4;
 }
+/* Generous Spacing for Embedded Media Block */
+.portfolio-embedded-media {
+    margin-top: 2.25rem !important;    /* Pushes the card clearly away from the list text */
+    margin-bottom: 1rem !important;
+    max-width: 480px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1rem;                  /* Clean padding inside the card */
+    display: block;                 /* Forces block layout */
+    clear: both;
+}
+
+.portfolio-embedded-media img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 0.75rem;         /* Space between image and caption */
+}
+
+.media-caption {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: block !important;       /* Forces caption to own line */
+    width: 100% !important;
+    font-family: var(--font-mono);
+    text-align: center;
+    line-height: 1.4;
+    clear: both;
+}
