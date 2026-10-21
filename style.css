@@ -372,17 +372,18 @@ body {
     line-height: 1.4;
     clear: both;
 }
-/* Isolated Case Study Media Card (Guarantees zero text wrapping issues) */
+/* Isolated Case Study Media Card */
 .case-study-media-card {
     display: block !important;
     width: 100% !important;
-    max-width: 460px !important;
-    margin-top: 2rem !important;
+    max-width: 480px !important;
+    margin-top: 1.75rem !important;
     margin-bottom: 0.5rem !important;
-    background: #ffffff !important;
+    background: #ffffff !important;           /* Forces crisp white background */
     border: 1px solid var(--border-light) !important;
-    border-radius: 6px !important;
-    padding: 0.85rem !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
     clear: both !important;
 }
 
@@ -391,7 +392,7 @@ body {
     width: 100% !important;
     height: auto !important;
     border-radius: 4px !important;
-    margin-bottom: 0.65rem !important;
+    margin-bottom: 0.75rem !important;
 }
 
 .case-study-caption {
