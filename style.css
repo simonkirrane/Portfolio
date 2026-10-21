@@ -372,14 +372,13 @@ body {
     line-height: 1.4;
     clear: both;
 }
-/* Isolated Case Study Media Card */
+/* Centered Isolated Case Study Media Card */
 .case-study-media-card {
     display: block !important;
     width: 100% !important;
-    max-width: 480px !important;
-    margin-top: 1.75rem !important;
-    margin-bottom: 0.5rem !important;
-    background: #ffffff !important;           /* Forces crisp white background */
+    max-width: 520px !important;       /* Gives the card a clean, polished width */
+    margin: 2rem auto 0.5rem auto !important; /* 'auto' on left/right centers it perfectly */
+    background: #ffffff !important;
     border: 1px solid var(--border-light) !important;
     border-radius: 8px !important;
     padding: 1rem !important;
