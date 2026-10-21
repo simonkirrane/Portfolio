@@ -344,6 +344,41 @@ body {
     color: var(--accent-signal);
     text-decoration: none;
 }
+/* --- Click-to-Expand Chart Modal Styles --- */
+.expanded-chart {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none !important;
+    background: rgba(11, 15, 25, 0.96) !important;
+    z-index: 99999 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    cursor: zoom-out !important;
+}
 
+.expanded-chart img {
+    width: auto !important;
+    max-width: 90vw !important;
+    max-height: 82vh !important;
+    object-fit: contain !important;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    border-radius: 8px;
+}
+
+.expanded-chart span {
+    color: #f8fafc !important;
+    font-size: 0.9rem !important;
+    margin-top: 1.25rem !important;
+    font-family: var(--font-sans) !important;
+}
 .site-footer {
     text-align: center
