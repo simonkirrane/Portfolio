@@ -286,3 +286,6 @@ body {
 .doc-section a:hover, .narrative-block a:hover, .body-copy a:hover {
     opacity: 0.8;
 }
+.portfolio-result-box a, .result-list a {
+    color: var(--accent-signal) !important;
+}
