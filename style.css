@@ -276,3 +276,13 @@ body {
     .hero-title { font-size: 2rem; }
     .doc-section h1 { font-size: 1.6rem; }
 }
+/* Ensure all body links match your publisher crimson accent */
+.doc-section a, .narrative-block a, .body-copy a {
+    color: var(--accent-signal);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.doc-section a:hover, .narrative-block a:hover, .body-copy a:hover {
+    opacity: 0.8;
+}
