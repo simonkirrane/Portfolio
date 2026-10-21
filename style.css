@@ -289,3 +289,28 @@ body {
 .portfolio-result-box a, .result-list a {
     color: var(--accent-signal) !important;
 }
+/* Permanently Visible Portfolio Media Block */
+.portfolio-embedded-media {
+    margin-top: 1.25rem;
+    max-width: 420px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.portfolio-embedded-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.media-caption {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+    display: block;
+    font-family: var(--font-mono);
+    text-align: center;
+}
