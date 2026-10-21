@@ -115,10 +115,10 @@
              <li>
                     Became the highest-converting asset category on the site, directly shaping product naming and positioning.
                     <!-- Click-to-Expand Thumbnail Widget -->
-<div style="margin-top: 0.75rem; max-width: 220px; background: #fff; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; padding: 4px; cursor: pointer;" onclick="this.classList.toggle('expanded-chart')">
-                        <img src="Kolekti-Numbers.webp" alt="Semrush Performance Data" style="width: 100%; height: auto; border-radius: 4px; display: block;" />
-                        <span style="font-size: 0.68rem; color: #737373; margin-top: 3px; display: block; font-family: monospace; text-align: center;">🔍 Click to expand chart</span>
-                    </div>
+<div class="chart-thumb" data-expand>
+    <img src="Kolekti-Numbers.webp" alt="Semrush performance data: organic CTA clicks, user acquisition, keyword growth and organic clicks for Kolekti" />
+    <span>🔍 Click to expand chart</span>
+</div>
                 </li>
                <li>Tapped into developer culture using a <em>Stranger Things</em> / D&D character sheet hook, creating a lightweight, high-engagement acquisition loop. (<a href="#" target="_blank" rel="noopener noreferrer">View Character Sheet →</a>)</li>
                 <li>Partnered with Agile Manifesto signatory Jon Kern to launch <em>The Agile Framework</em>, yielding the best-attended GTM webinar in Kolekti's history. (<a href="#" target="_blank" rel="noopener noreferrer">View LinkedIn Event →</a> | <a href="#" target="_blank" rel="noopener noreferrer">Explore Framework →</a>)</li>
@@ -211,6 +211,28 @@
 <footer class="site-footer">
     <p>&copy; 2026 Simon Kirrane. All rights reserved.</p>
 </footer>
+   <script>
+document.querySelectorAll('[data-expand]').forEach(function (thumb) {
+    thumb.addEventListener('click', function () {
+        var img = thumb.querySelector('img');
+        var overlay = document.createElement('div');
+        overlay.className = 'chart-overlay';
+        overlay.innerHTML = '<img src="' + img.src + '" alt="' + img.alt + '"><span>Click anywhere or press Esc to close</span>';
+
+        function close() {
+            overlay.remove();
+            document.body.style.overflow = '';
+            document.removeEventListener('keydown', onKey);
+        }
+        function onKey(e) { if (e.key === 'Escape') close(); }
+
+        overlay.addEventListener('click', close);
+        document.addEventListener('keydown', onKey);
+        document.body.style.overflow = 'hidden';
+        document.body.appendChild(overlay);
+    });
+});
+</script>
 
 </body>
 </html>
