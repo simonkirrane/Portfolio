@@ -74,7 +74,7 @@ export default function App() {
         Skip to content
       </a>
 
-     <header className="site-header">
+    <header className="site-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <a
           className="wordmark"
           href="#top"
@@ -90,22 +90,24 @@ export default function App() {
           <a href="#w42st">04</a>
           <a href="#ai-work">05</a>
         </nav>
-        <a
-          href="https://www.simonkirrane.com/"
-          target="_blank"
-          rel="noreferrer"
-          style={{ fontSize: '0.85rem', textDecoration: 'none', fontWeight: 500, color: 'inherit', opacity: 0.85 }}
-        >
-          Home ↗
-        </a>
-        <a
-          className="header-cta"
-          href="https://www.linkedin.com/in/simonkirrane/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn <span aria-hidden="true">↗</span>
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <a
+            href="https://www.simonkirrane.com/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ fontSize: '0.85rem', textDecoration: 'none', fontWeight: 500, color: 'inherit', opacity: 0.85 }}
+          >
+            Home ↗
+          </a>
+          <a
+            className="header-cta"
+            href="https://www.linkedin.com/in/simonkirrane/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </header>
 
       <main id="main">
