@@ -90,14 +90,20 @@ export default function App() {
           <a href="#w42st">04</a>
           <a href="#ai-work">05</a>
         </nav>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <a
             href="https://www.simonkirrane.com/"
             target="_blank"
             rel="noreferrer"
-            style={{ fontSize: '0.85rem', textDecoration: 'none', fontWeight: 500, color: 'inherit', opacity: 0.85 }}
+            style={{ 
+              fontFamily: 'var(--mono)', 
+              fontSize: '0.85rem', 
+              textDecoration: 'underline', 
+              fontWeight: 500, 
+              color: 'inherit' 
+            }}
           >
-            Home ↗
+            Home <span aria-hidden="true">↗</span>
           </a>
           <a
             className="header-cta"
