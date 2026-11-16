@@ -31,9 +31,44 @@ const Result = ({
     <span>{children}</span>
   </li>
 )
-
 export default function App() {
+  // Inject schema on component load
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.simonkirrane.com/#person",
+          "name": "Simon Kirrane",
+          "url": "https://www.simonkirrane.com",
+          "jobTitle": "Independent Content Director & Strategist",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bath",
+            "addressCountry": "UK"
+          },
+          "sameAs": [
+            "https://signal.simonkirrane.com",
+            "https://www.linkedin.com/in/simon-kirrane/"
+          ],
+          "knowsAbout": [
+            "Content Strategy",
+            "Search Engine Optimisation",
+            "Generative Engine Optimisation",
+            "Semantic SEO"
+          ]
+        }
+      ]
+    })
+    document.head.appendChild(script)
+    return () => { document.head.removeChild(script) }
+  }, [])
+
   return (
+    <>
     <>
       <a className="skip-link" href="#main">
         Skip to content
