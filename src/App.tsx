@@ -91,12 +91,12 @@ export default function App() {
           <a href="#ai-work">05</a>
         </nav>
         <a
-          href="https://signal.simonkirrane.com/"
+          href="https://www.simonkirrane.com/"
           target="_blank"
           rel="noreferrer"
           style={{ fontSize: '0.85rem', textDecoration: 'none', fontWeight: 500, color: 'inherit', opacity: 0.85 }}
         >
-          Signal/Noise ↗
+          Home ↗
         </a>
         <a
           className="header-cta"
