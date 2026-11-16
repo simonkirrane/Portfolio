@@ -74,7 +74,7 @@ export default function App() {
         Skip to content
       </a>
 
-      <header className="site-header">
+     <header className="site-header">
         <a
           className="wordmark"
           href="#top"
@@ -90,6 +90,14 @@ export default function App() {
           <a href="#w42st">04</a>
           <a href="#ai-work">05</a>
         </nav>
+        <a
+          href="https://signal.simonkirrane.com/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ fontSize: '0.85rem', textDecoration: 'none', fontWeight: 500, color: 'inherit', opacity: 0.85 }}
+        >
+          Signal/Noise ↗
+        </a>
         <a
           className="header-cta"
           href="https://www.linkedin.com/in/simonkirrane/"
