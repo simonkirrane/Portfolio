@@ -1,4 +1,5 @@
-const ExternalLink = ({
+import React, { useEffect } from 'react'
+  const ExternalLink = ({
   href,
   children,
 }: {
