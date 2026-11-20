@@ -50,11 +50,12 @@ export default function App() {
         "Senior Content Strategist"
       ],
       "sameAs": [
-        "https://www.linkedin.com/in/simonkirrane/",
-        "https://www.kolekti.com/authors/simon-kirrane",
-        "https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
-        "https://www.instagram.com/simonkirrane/"
-      ]
+  "https://www.linkedin.com/in/simonkirrane/",
+  "https://www.kolekti.com/authors/simon-kirrane",
+  "https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
+  "https://www.instagram.com/simonkirrane/",
+  "https://signal.simonkirrane.com/"
+]
     },
     {
       "@type": "ProfilePage",
