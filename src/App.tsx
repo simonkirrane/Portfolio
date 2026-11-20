@@ -40,28 +40,37 @@ export default function App() {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://www.simonkirrane.com/#person",
-          "name": "Simon Kirrane",
-          "url": "https://www.simonkirrane.com",
-          "jobTitle": "Independent Content Director & Strategist",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Bath",
-            "addressCountry": "UK"
-          },
-          "sameAs": [
-            "https://signal.simonkirrane.com",
-            "https://www.linkedin.com/in/simon-kirrane/"
-          ],
-          "knowsAbout": [
-            "Content Strategy",
-            "Search Engine Optimisation",
-            "Generative Engine Optimisation",
-            "Semantic SEO"
-          ]
-        }
+     {
+
+"@type": "Person",
+
+"@id": "https://www.simonkirrane.com/#person",
+
+"name": "Simon Kirrane",
+
+"url": "https://www.simonkirrane.com/",
+
+"jobTitle": [
+
+"Content Director",
+
+"Senior Content Strategist"
+
+],
+
+"sameAs": [
+
+"https://www.linkedin.com/in/simonkirrane/",
+
+"https://www.kolekti.com/authors/simon-kirrane",
+
+"https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
+
+"https://www.instagram.com/simonkirrane/"
+
+]
+
+}
       ]
     })
     document.head.appendChild(script)
