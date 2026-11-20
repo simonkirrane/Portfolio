@@ -38,38 +38,39 @@ export default function App() {
     const script = document.createElement('script')
     script.type = 'application/ld+json'
     script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-     {
-
-"@type": "Person",
-
-"@id": "https://www.simonkirrane.com/#person",
-
-"name": "Simon Kirrane",
-
-"url": "https://www.simonkirrane.com/",
-
-"jobTitle": [
-
-"Content Director",
-
-"Senior Content Strategist"
-
-],
-
-"sameAs": [
-
-"https://www.linkedin.com/in/simonkirrane/",
-
-"https://www.kolekti.com/authors/simon-kirrane",
-
-"https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
-
-"https://www.instagram.com/simonkirrane/"
-
-]
-
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.simonkirrane.com/#person",
+      "name": "Simon Kirrane",
+      "url": "https://www.simonkirrane.com/",
+      "jobTitle": [
+        "Content Director",
+        "Senior Content Strategist"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/simonkirrane/",
+        "https://www.kolekti.com/authors/simon-kirrane",
+        "https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
+        "https://www.instagram.com/simonkirrane/"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://portfolio.simonkirrane.com/#profilepage",
+      "url": "https://portfolio.simonkirrane.com/",
+      "name": "Portfolio — Simon Kirrane (Content Director & Senior Content Strategist)",
+      "description": "Professional portfolio and case studies featuring work across Kolekti, Future Plc, W42ST, and Canon EMEA.",
+      "about": {
+        "@id": "https://www.simonkirrane.com/#person"
+      },
+      "mainEntity": {
+        "@id": "https://www.simonkirrane.com/#person"
+      },
+      "inLanguage": "en-GB"
+    }
+  ]
 }
       ]
     })
