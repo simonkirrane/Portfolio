@@ -38,45 +38,157 @@ export default function App() {
     const script = document.createElement('script')
     script.type = 'application/ld+json'
     script.text = JSON.stringify({
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://www.simonkirrane.com/#person",
-      "name": "Simon Kirrane",
-      "url": "https://www.simonkirrane.com/",
-      "jobTitle": [
-        "Content Director",
-        "Senior Content Strategist"
-      ],
-      "sameAs": [
-  "https://www.linkedin.com/in/simonkirrane/",
-  "https://www.kolekti.com/authors/simon-kirrane",
-  "https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
-  "https://www.instagram.com/simonkirrane/",
-  "https://signal.simonkirrane.com/"
-]
-    },
-    {
-      "@type": "ProfilePage",
-      "@id": "https://portfolio.simonkirrane.com/#profilepage",
-      "url": "https://portfolio.simonkirrane.com/",
-      "name": "Portfolio — Simon Kirrane (Content Director & Senior Content Strategist)",
-      "description": "Professional portfolio and case studies featuring work across Kolekti, Future Plc, W42ST, and Canon EMEA.",
-      "about": {
-        "@id": "https://www.simonkirrane.com/#person"
-      },
-      "mainEntity": {
-        "@id": "https://www.simonkirrane.com/#person"
-      },
-      "inLanguage": "en-GB"
-    }
-  ]
-}
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://portfolio.simonkirrane.com/#collectionpage",
+          "url": "https://portfolio.simonkirrane.com/",
+          "name": "Simon Kirrane — Content Director & Digital Strategist Portfolio",
+          "inLanguage": "en-GB",
+          "about": {
+            "@id": "https://www.simonkirrane.com/#person"
+          },
+          "mainEntity": {
+            "@id": "https://portfolio.simonkirrane.com/#casestudies"
+          },
+          "relatedLink": [
+            "https://www.simonkirrane.com/",
+            "https://signal.simonkirrane.com/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.simonkirrane.com/#person",
+          "name": "Simon Kirrane",
+          "url": "https://www.simonkirrane.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/52ea3ff2e4b0bece51f8702a/9f3453ac-8f5c-4b05-8e1b-0e54a5d0e814/Simon+and+Stan.jpeg?format=2500w",
+          "jobTitle": "Content Director",
+          "sameAs": [
+            "https://www.linkedin.com/in/simonkirrane/",
+            "https://www.kolekti.com/authors/simon-kirrane",
+            "https://www.amazon.com/s?i=stripbooks&rh=p_27%3ASimon%2BKirrane&s=relevancerank&text=Simon+Kirrane",
+            "https://www.instagram.com/simonkirrane/"
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://portfolio.simonkirrane.com/#casestudies",
+          "name": "Featured Content Direction & Digital Strategy Work",
+          "numberOfItems": 5,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Kolekti & Mosaic: Templates Convert (2023–2026)",
+                "url": "https://portfolio.simonkirrane.com/",
+                "dateCreated": "2023",
+                "description": "Built a bottom-of-funnel Confluence templates and frameworks strand around Mosaic, growing kolekti.com from 0 to ~8,400 organic keywords by May 2024, scaling monthly active users from 6,600 to 36,000, increasing website traffic by 52%, and launching the Jon Kern Agile Framework.",
+                "author": {
+                  "@id": "https://www.simonkirrane.com/#person"
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "Search engine optimization",
+                  "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Future plc: Advnture.com Concept-to-Market Launch (2019–2022)",
+                "url": "https://portfolio.simonkirrane.com/",
+                "dateCreated": "2020",
+                "description": "Led the concept-to-market launch of Advnture.com in 6 weeks while managing a 100+ person editorial division at Future plc, generating revenue by month 3 and scaling to 8.4 million quarterly visits within 24 months.",
+                "author": {
+                  "@id": "https://www.simonkirrane.com/#person"
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "Digital publishing",
+                  "sameAs": "https://en.wikipedia.org/wiki/Electronic_publishing"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Canon EMEA Ambassador Programme Launch (2016–2019)",
+                "url": "https://portfolio.simonkirrane.com/",
+                "dateCreated": "2017",
+                "description": "Delivered content strategy and global editorial workflows for the Canon EMEA Ambassador launch, creating evergreen creator profiles built as product use-case overviews.",
+                "author": {
+                  "@id": "https://www.simonkirrane.com/#person"
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "Content strategy",
+                  "sameAs": "https://en.wikipedia.org/wiki/Content_strategy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "KOB Publishing: W42ST Hyperlocal Brand Launch in New York (2014–2016)",
+                "url": "https://portfolio.simonkirrane.com/",
+                "dateCreated": "2014-11",
+                "description": "Co-founded KOB Publishing and launched the 100-page hyperlocal print and digital brand W42ST in Hell's Kitchen in three months with a 20,000 print run.",
+                "author": {
+                  "@id": "https://www.simonkirrane.com/#person"
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "Hyperlocal journalism",
+                  "sameAs": "https://en.wikipedia.org/wiki/Hyperlocal"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "AI & GEO Strategy, Playbooks & Atlassian Rovo Macro Workaround (2025–2026)",
+                "url": "https://portfolio.simonkirrane.com/",
+                "dateCreated": "2026-06",
+                "description": "Authored the Signal/Noise semantic GEO guide, reworked an enterprise AI governance guide into a content marketing playbook, and engineered a June 2026 prompt workaround enabling Atlassian Rovo to extract content inside Confluence macros.",
+                "author": {
+                  "@id": "https://www.simonkirrane.com/#person"
+                },
+                "review": {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Dan Ivory",
+                    "jobTitle": "Senior Product Manager, Mosaic"
+                  },
+                  "reviewBody": "Simon's testing and subsequent findings have laid the foundation for the engineering team's ongoing investigations and have given us hope there is a solution… Further highlighting the impact Simon has had beyond his day-to-day work."
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "Generative engine optimization",
+                  "sameAs": "https://en.wikipedia.org/wiki/Generative_engine_optimization"
+                }
+              }
+            }
+          ]
+        }
       ]
     })
     document.head.appendChild(script)
-    return () => { document.head.removeChild(script) }
+    return () => {
+      document.head.removeChild(script)
+    }
   }, [])
 
   return (
@@ -131,7 +243,7 @@ export default function App() {
         <section className="hero" id="top">
           <div className="hero-grid">
             <div className="hero-intro">
-              <p className="eyebrow">Content Lead &amp; Digital Strategist</p>
+              <p className="eyebrow">Content Director &amp; Digital Strategist</p>
               <h1>
                 Simon
                 <br />
