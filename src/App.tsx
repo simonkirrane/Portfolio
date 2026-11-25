@@ -550,7 +550,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                   <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
                     <a
                       className="text-link"
-                      href="YOUR_KOLEKTI_TEMPLATES_URL"
+                      href="https://www.kolekti.com/resources/templates/all"
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
@@ -565,7 +565,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                   <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
                     <a
                       className="text-link"
-                      href="YOUR_KNOWLEDGE_WORKER_URL"
+                      href="https://www.kolekti.com/resources/blog/what-is-a-knowledge-worker"
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
@@ -580,7 +580,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                   <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
                     <a
                       className="text-link"
-                      href="YOUR_SYSTEM_OF_WORK_URL"
+                      href="https://www.kolekti.com/resources/blog/building-system-of-work-confluence-templates"
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
@@ -595,7 +595,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                   <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
                     <a
                       className="text-link"
-                      href="YOUR_KOLEKTI_AUTHOR_PAGE_URL"
+                      href="https://www.kolekti.com/authors/simon-kirrane"
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
@@ -656,7 +656,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                   <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
                     <a
                       className="text-link"
-                      href="YOUR_MBA_ESSAY_URL"
+                      href="https://www.simonkirrane.com/mba-essay"
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
