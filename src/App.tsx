@@ -520,7 +520,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
               </div>
               <p className="case-deck">
                 Long-form thinking on knowledge systems, AI workflows, and
-                organisational change—from commercial SaaS playbooks to MBA
+                organisational change, from commercial SaaS playbooks to MBA
                 research.
               </p>
             </div>
