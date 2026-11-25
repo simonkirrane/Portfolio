@@ -686,6 +686,11 @@ figure figcaption span {
     linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)),
     repeating-linear-gradient(90deg, transparent 0, transparent 79px, #c9c5ba 80px);
 }
+.writing-case {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(208, 47, 37, 0.065), transparent 28rem),
+    var(--paper);
+}
 
 .ai-heading {
   align-items: start;
