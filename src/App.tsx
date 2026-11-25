@@ -558,7 +558,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       Kolekti Templates Hub ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Templates are high-intent search assets built to withstand AI Overviews, that evolved into systems of work.
+                      Templates are high-intent search assets built to withstand AI Overviews that evolved into systems of work.
                     </p>
                   </li>
 
@@ -573,7 +573,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       What is a knowledge worker? ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Initially this ranked on page one of SERPS by IBM, it still performs well.
+                      Initially this ranked on page one of SERPS alongside IBM, it still performs well.
                     </p>
                   </li>
 
@@ -634,7 +634,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       SimonKirrane.com — Ongoing Blog ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Testing an AI workflow with articles focussed on AI Content.
+                      Testing an AI workflow with articles focussed on AI content.
                     </p>
                   </li>
 
