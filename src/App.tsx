@@ -510,7 +510,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
         </section>
       </main>
 
-      <section className="case-study" id="writing">
+      <section className="case-study writing-case" id="writing">
           <div className="section-inner">
             <SectionLabel number="06" />
             <div className="case-heading">
