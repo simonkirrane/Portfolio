@@ -48,13 +48,14 @@ export default function App() {
           <span>SK</span>
           <span>Simon Kirrane</span>
         </a>
-        <nav aria-label="Portfolio sections">
-          <a href="#templates">01</a>
-          <a href="#advnture">02</a>
-          <a href="#canon">03</a>
-          <a href="#w42st">04</a>
-          <a href="#ai-work">05</a>
-        </nav>
+<nav aria-label="Portfolio sections">
+  <a href="#templates">01</a>
+  <a href="#advnture">02</a>
+  <a href="#canon">03</a>
+  <a href="#w42st">04</a>
+  <a href="#ai-work">05</a>
+  <a href="#writing">06</a>
+</nav>
        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <a
             href="https://www.simonkirrane.com/"
@@ -508,6 +509,169 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
           </div>
         </section>
       </main>
+
+      <section className="case-study" id="writing">
+          <div className="section-inner">
+            <SectionLabel number="06" />
+            <div className="case-heading">
+              <div>
+                <p className="client">Selected Writing &amp; Research</p>
+                <h2>Essays, playbooks &amp; bylines.</h2>
+              </div>
+              <p className="case-deck">
+                Long-form thinking on knowledge systems, AI workflows, and
+                organisational change—from commercial SaaS playbooks to MBA
+                research.
+              </p>
+            </div>
+
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                gap: '3.5rem',
+                marginTop: '3rem',
+              }}
+            >
+              {/* Column 1: Kolekti & Commercial Strategy */}
+              <div>
+                <p className="kicker" style={{ marginBottom: '1.5rem' }}>
+                  Kolekti · Product &amp; Search Strategy
+                </p>
+                <ul
+                  style={{
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                  }}
+                >
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="YOUR_KOLEKTI_TEMPLATES_URL"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      Kolekti Templates Hub ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      High-intent search assets built to withstand AI Overviews, evolving into departmental systems of work.
+                    </p>
+                  </li>
+
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="YOUR_KNOWLEDGE_WORKER_URL"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      What is a knowledge worker? ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Clarifying a foundational digital workplace concept to align language, intent, and search behaviour.
+                    </p>
+                  </li>
+
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="YOUR_SYSTEM_OF_WORK_URL"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      Building a system of work: Confluence templates ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Connecting jobs-to-be-done intent directly to usable artefacts that reduce team friction.
+                    </p>
+                  </li>
+
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="YOUR_KOLEKTI_AUTHOR_PAGE_URL"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      Kolekti Author Archive — Full Body of Work ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Complete index of published articles covering knowledge systems, AI, and organisational work.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 2: Independent & Academic Writing */}
+              <div>
+                <p className="kicker" style={{ marginBottom: '1.5rem' }}>
+                  Independent &amp; MBA Research
+                </p>
+                <ul
+                  style={{
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                  }}
+                >
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="https://www.simonkirrane.com/blog"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      SimonKirrane.com — Ongoing Blog ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Testing ideas, frameworks, and language around AI workflows, knowledge systems, and editorial leadership.
+                    </p>
+                  </li>
+
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="https://www.simonkirrane.com/blog/how-to-use-ai-for-content-marketing"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      How to Use AI for Content Marketing ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Originally built as an AI governance playbook for Narus, reworked into a practical guide for content teams.
+                    </p>
+                  </li>
+
+                  <li style={{ padding: '1.25rem 0', borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
+                    <a
+                      className="text-link"
+                      href="YOUR_MBA_ESSAY_URL"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
+                    >
+                      Change, Best Practice, and Resistance in a Declining Print Industry ↗
+                    </a>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
+                      Exeter MBA paper examining why people resist organisational change during legacy print-to-digital transformation.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
       <footer className="site-footer">
         <div>
