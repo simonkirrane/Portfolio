@@ -451,7 +451,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
             <div className="case-heading ai-heading">
               <div>
                 <p className="client">AI work · 2025–26</p>
-                <h2>Signal > noise.</h2>
+                <h2>{'Signal > Noise.'}</h2>
               </div>
               <p className="case-deck">
                 Researching, building and delivering new AI and GEO strategies – 
