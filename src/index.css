@@ -688,7 +688,7 @@ figure figcaption span {
 }
 .writing-case {
   background:
-    radial-gradient(circle at 84% 18%, rgba(208, 47, 37, 0.065), transparent 28rem),
+    radial-gradient(circle at 84% 18%, rgba(208, 47, 37, 0.15), transparent 28rem),
     var(--paper);
 }
 
