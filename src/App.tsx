@@ -519,8 +519,8 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                 <h2>Essays, playbooks &amp; bylines.</h2>
               </div>
               <p className="case-deck">
-                Long-form thinking on knowledge systems, AI workflows, and
-                organisational change, from commercial SaaS playbooks to MBA
+                Written work covering templates, knowledge systems, AI workflows, 
+                and organisational change, from commercial SaaS playbooks to MBA
                 research.
               </p>
             </div>
