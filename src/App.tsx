@@ -558,7 +558,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       Kolekti Templates Hub ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      High-intent search assets built to withstand AI Overviews, that evolved into systems of work.
+                      Templates are high-intent search assets built to withstand AI Overviews, that evolved into systems of work.
                     </p>
                   </li>
 
@@ -573,7 +573,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       What is a knowledge worker? ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Initially this ranked on page one of SERPS under IBM, it still performs well.
+                      Initially this ranked on page one of SERPS by IBM, it still performs well.
                     </p>
                   </li>
 
@@ -588,7 +588,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       Building a system of work: Confluence templates ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Connecting jobs-to-be-done to chained templates that improve efficiency.
+                      Connecting jobs-to-be-done to chained templates to deliver efficiency.
                     </p>
                   </li>
 
@@ -634,7 +634,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       SimonKirrane.com — Ongoing Blog ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Testing AI workflows with articles focuessed on AI Content.
+                      Testing an AI workflow with articles focussed on AI Content.
                     </p>
                   </li>
 
@@ -649,7 +649,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       How to Use AI for Content Marketing ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      Originally built as an playbook for our AI governance tool Narus and reworked into a practical guide for content teams.
+                      This article was originally drafted as an playbook for our AI governance tool and subsequently reworked into a practical guide for content teams.
                     </p>
                   </li>
 
@@ -661,10 +661,10 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       rel="noreferrer"
                       style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', display: 'inline-block', marginBottom: '0.4rem' }}
                     >
-                      Change, Best Practice, and Resistance in a Declining Print Industry ↗
+                      Change, Best Practice, and Resistance ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      MBA essay looking at overcoming people's resistance to organisational change.
+                      MBA essay looking at how I overcome people's resistance to organisational change.
                     </p>
                   </li>
                 </ul>
