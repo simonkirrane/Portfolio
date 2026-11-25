@@ -664,7 +664,7 @@ In 2023, my first year at Kolekti, by retooling documentation into bottom-of-fun
                       Change, Best Practice, and Resistance ↗
                     </a>
                     <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0, lineHeight: 1.5 }}>
-                      MBA essay looking at how I overcome people's resistance to organisational change.
+                      MBA essay looking at how I overcame people's resistance to organisational change.
                     </p>
                   </li>
                 </ul>
