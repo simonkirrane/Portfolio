@@ -86,7 +86,7 @@ export default function App() {
         <section className="hero" id="top">
           <div className="hero-grid">
             <div className="hero-intro">
-              <p className="eyebrow">Content Director &amp; Digital Strategist</p>
+              <p className="eyebrow">Content Director &amp; Senior Content Strategist</p>
               <h1>
                 Simon
                 <br />
